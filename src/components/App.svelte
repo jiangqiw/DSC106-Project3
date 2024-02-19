@@ -14,7 +14,7 @@
 
 
   onMount(async () => {
-    fetch('/renewable_energy_data_US_prop.json')
+    fetch('renewable_energy_data_US_prop.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -34,7 +34,7 @@
       .catch(error => {
         console.error('There has been a problem with your fetch operation:', error);
       });
-    fetch('/renewable_energy_data_China_prop.json')
+    fetch('renewable_energy_data_China_prop.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok for China dataset');
